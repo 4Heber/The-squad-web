@@ -1,0 +1,48 @@
+/* ---Header-navegation-bar--- */
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: linear-gradient(to right,#000814,#000057,#1CB5E0,#11998e);
+    background-size: 160%;
+    height: 50px;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 2px 0 2px rgba(0,0,0,0.2);
+    transition: all 1s ease;
+}
+
+.header-content:hover {
+    background-size: 100%;
+}
+
+.logotype {
+    height: 40px;
+    cursor: pointer;
+}
+
+.drop-btn {display: none;}
+
+.nav_links {
+    list-style: none;
+    display: flex;
+}
+
+.nav_links li {
+    padding: 0 20px;
+}
+
+.nav_links li a {
+    font-family: road-rage;
+    letter-spacing: 2px;
+    transition: all 0.5s ease;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: normal;
+    color: #fff;
+}
+
+.nav_links li a:hover {
+    color: #000; 
+}

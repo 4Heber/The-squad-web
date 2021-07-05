@@ -1,0 +1,42 @@
+/* ---Video-section--- */
+
+.video-container {
+    display: block;
+    position: relative;
+    width: 800px;
+    box-shadow: 1px 2px 4px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    margin-bottom: 80px;
+}
+
+.video-header {
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 1px 1px rgba(255,255,255,0.2);
+    letter-spacing: 4px;
+    user-select: none;
+    border-bottom: 1px solid #000;
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0px;
+}
+
+iframe {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    outline: none;
+}
+
+.edition-author {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.507);
+}

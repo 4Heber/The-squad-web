@@ -1,0 +1,161 @@
+/* 
+Break-points:
+    1- Max-width: 1900px and down 
+        (reducir ancho de los contenedores principales)
+    2- Max-width: 1700px and down 
+        (agrupar lista de barra nevegación en contenedor desplegable)
+    2- Max-width: 1320px and down - hasta móviles/tablets con resolusión de 768px 
+        (cambiar disposición contenedor de perfil, ampliar imagen de fondo, ocultar contenedor 'clasificatoria')
+*/
+
+@media screen and (max-width: 1900px){
+    /* .flex-container (.video-container and .blurred-bg-container-2 */
+
+    .blurred-bg-container-1 {width: 35%;}
+
+    .card-content-title p {letter-spacing: 2px;}
+
+    .video-container {width: 680px; margin-bottom: 40px;}
+
+    .blurred-bg-container-2 {width: 680px;}
+}
+
+@media screen and (max-width: 1700px){
+    /* --navegation-- */
+
+    /* style the dropdown button */
+    .drop-btn {
+        display: block;
+        background: transparent;
+        border: none;
+        font-size: 1.8em;
+        font-family: 'road-rage';
+        letter-spacing: 6px;
+        text-transform: uppercase;
+        padding: 0px 6px;
+        cursor: pointer;
+        outline: none;
+    }
+
+    /* The container <div> to position the dropdown content */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        width: 300px;
+    }
+
+    /* Dropdown content (hidden by default) */
+    .nav {
+        display: none;
+        position: relative;
+    }
+
+    /* Links inside the dropdown */
+    .nav_links {
+        display: inline-flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        position: absolute;
+        background: rgba(100, 100, 100, 0.1);
+        border-radius: 6px;
+        width: 100%;
+    }
+    .nav_links li {
+        width: 100%;
+        text-align: center;
+        transition: border 1s linear;
+    }
+
+    .nav_links li a {
+        text-shadow: none;
+        letter-spacing: none;
+        color: rgb(167, 167, 167);
+    }
+
+    /* Change color of dropdown links on hover */
+    .nav_links li:hover {
+        border-bottom: 1px solid #fff;
+    }
+    .nav_links li a:hover {
+        text-shadow: none;
+        letter-spacing: 4px;
+        color: rgb(255, 255, 255);
+    }
+
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .nav {
+        display: block;
+    }
+
+    /* Change the direction of the arrow dropdown button when the dropdown-content is shown */
+    .fa-chevron-left {
+        transition: all 1.5s ease;
+    }
+
+    .dropdown:hover .fa-chevron-left {
+        transform: rotate(270deg);
+    }
+}
+
+
+@media screen and (max-width: 1320px) {
+
+    /* --Sections profiles (backgrounds)-- */
+
+    #profile-1 {
+        background-position: center;
+        background-size: 182%;
+    }
+
+    #profile-1-5 {
+        background-position: center;
+        background-size: 182%;
+    }
+    #profile-2 {
+        background-position: center;
+        background-size: 182%;
+    }
+    #profile-3 {
+        background-position: center;
+        background-size: 182%;
+    }
+    #profile-4 {
+        background-position: center;
+        background-size: 182%;
+    }
+    #profile-5 {
+        background-position: center;
+        background-size: 182%;
+    }
+    #profile-6 {
+        background-position: center;
+        background-size: 182%;
+    }
+
+    /*--Card profile--*/
+    .blurred-bg-container-1 {width: 100%;}
+    .blurred-bg-container-1::before {margin: 1em;}
+    
+    .flex-card {display: flex;}
+
+    .card-profile {margin: 1em;}
+    .card-header {width: 40%;}
+    .card-header h2 {font-size: 1em;}
+    img.profile-icon {width: 70%;}
+
+    .card-image-fit img {width: 60%;}
+    .twitch-container {display: none;}
+
+    /*--Video section--*/
+    .flex-container {width: 100%;}
+    .video-container {width: 700px; margin-top: 30px;}
+    .blurred-bg-container-2 {display: none;}
+    .twitch-container {display: none;}
+
+    /*--GoTopButton--*/
+    #gotop-btn {
+        width: 3em;
+        height: 3em;
+        left: 90%;
+    }
+}

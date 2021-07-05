@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: road-rage;
+    src: url("../Fonts/Road_Rage.otf") format("opentype");
+}
+
+:root {
+    --header-bg: #192a56;
+    --header-color: #718093;
+    --bg-color: #2f3640;
+    --body-bg: #121920;
+}
+
+html {
+    scroll-behavior: smooth;
+} 
+
+body {
+    background-color: var(--body-bg);
+}
+
+.main-container {
+    margin: 0 30px 10px 30px;
+    box-shadow: 0 4px 0 4px rgba(0,0,0,0.2);
+    background: #000;
+}
+
+.upper-container {
+    width: 100%;
+}
+
+
+/* ---Main-text-background--- */
+
+.main-text-bg{
+    height: 95vh;
+    background-image: url(../Images/Main-resources/Background-text-final.png);
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+
+/* ---Profile-backgrounds--- */
+
+[id^="profile-"] {
+    height: 60em;
+    margin-bottom: 30px;
+    background-position: center;
+}
+
+.banner-container {
+    height: 980px;
+}
+
+#profile-1 {
+    background-image: url(../Images/Profile-1/Vayne-splashart-bg.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+#profile-1-5 {
+    background: url(../Images/Profile-1.5/profile-background2.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+#profile-2 {
+    background: url(../Images/Profile-2/katarina-bg-splashart.png);
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+#profile-3 {
+    background: url(../Images/Profile-3/darius-bg-skin.png);
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+#profile-4 {
+    background: url(../Images/Profile-4/diana-splashart-bg.png);
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+#profile-5 {
+    background: url(../Images/Profile-5/jhin-splashart-bg2.png);
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+#profile-6 {
+    background: url(../Images/Profile-6/jhin-bg-skin2.png);
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+
+/* ---Flex-container--- */
+
+.flex-container {
+    display: inline-flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 60%;
+}
+
+/* ---Clasification-card--- */
+
+.blurred-bg-container-2 {
+    display: inline-block;
+    background: transparent;
+    box-shadow: inset 0 0 1000px rgba(0, 0, 0, 0.8);
+    border-radius: 4px;
+    width: 900px;
+}
+
+.clasification-card {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    box-shadow: 0 2px 8px 2px #000;
+    border-radius: 4px;
+    padding: 0px 8px 0px 8px;
+}
+
+.card-header-clasi {
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.card-header-clasi h2 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+    position: relative;
+    border-bottom: 2px solid #000;
+    text-shadow: 1px 1px rgba(255,255,255,0.1);
+    margin-bottom: 6px;
+}
+
+.image-fit-division {
+    display: inline-block;
+    margin: 10px 0px;
+    padding: 2px 22px;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 1);
+    border-radius: 12px;
+}
+
+.image-fit-division img {
+    height: 180px;
+    width: 170px;
+}
+
+#efigies-card {
+
+}
+
+.Efigie-gif {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    padding-top: 6px;
+}
+
+.division-stats {
+    text-align: center;
+    text-shadow: 1px 1px rgba(255,255,255,0.1);
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 2px;
+    user-select: none;
+}
+
+.game-type {
+    border-bottom: 1px solid #000;
+}
+
+
+/* ---GoTop-button--- */
+
+#gotop-btn {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    left: 95%;
+    bottom: 20px;
+    background: var(--bg-color);
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    box-shadow: 0 8px 10px 4px rgba(0,0,0,0.8);
+    align-items: center;
+    cursor: pointer;
+    font-size: 30px;
+    outline: none;
+}
+
+#gotop-btn:hover {
+    font-size: 38px;
+}
+
+
+/* ---Footer-section--- */
+
+.footer-content {
+    background: linear-gradient(to right,#0f0c29,#302b63,#24243e);
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.logotype {
+    margin: 6px;
+    position: relative;
+    display: inline-block;
+}
+
+.rights-text {
+    position: absolute;
+    display: inline-block;
+    user-select: none;
+    left: 45%;
+    padding-top: 24px;
+    color: #fff;
+}
+
+.social-media-container {
+    position: relative;
+    display: inline-block;
+}
+
+.social-media {
+    padding: 2px 4px;
+    bottom: 10px;
+}
+
+#social-media-insta {
+    background: linear-gradient(to right,#405de6,#5851d8,#833ab4,#c13584,#e1306c,#fd1d1d,#f56040,
+    #f77737,#fcaf45,#ffdc80);  
+    border-radius: 8px;
+    width: 130px;
+    padding: 0px 4px;
+    font-size: 1em;
+    text-shadow: none;
+    text-transform: none;
+    color: #000;
+    position: relative;
+}
+
+#social-media-youtube {
+    background: linear-gradient(to right, #be0000, #960000, #550000);
+    width: 100px;
+    padding: 0px 4px;
+    font-size: 1em;
+    border-radius: 8px;
+    text-shadow: none;
+    text-transform: none;
+    color: #000;
+    position: absolute;
+    left: 180px;
+    top: 22px;
+    transition: color 1.5s ease;
+}
+
+#social-media-youtube:hover,
+#social-media-youtube-2:hover {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#social-media-youtube-2 {
+    background: linear-gradient(to right, #be0000, #960000, #550000); 
+    width: 100px;
+    font-size: 1em;
+    padding: 0px 4px;
+    border-radius: 8px;
+    text-shadow: none;
+    text-transform: none;
+    color: #000;
+    position: relative;
+    margin-left: 4px;
+    transition: color 1.5s ease;
+}
+
+.fa-youtube {
+    font-size: 1em;
+    color: #000;
+}
+
+/* ---Scroll-bar--- */
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    border: 3px solid #000;
+    box-shadow: inset 0 0 3px 3px rgba(0,0,0,0.4);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg,#000057,#1CB5E0,#11998e);
+    border-radius: 4px;
+    z-index: -1;
+}
